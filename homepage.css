@@ -1,0 +1,23 @@
+.T{
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+}
+
+.I {
+    width: 50%;
+}
+table {
+    border-collapse: collapse;
+}
+
+.SS {
+    font-size: x-large;
+    font-weight: 1000;
+    font-family: Comic Sans MS;
+}
+
+.CD {
+    font-weight: normal;
+    font-size: initial;
+}
