@@ -3,24 +3,30 @@ import java.io.*;
 
 public class User
 {
-	private String username;
+  private String username;
   private String password;
 
   private boolean sex;
 
-  private int height;
+  private double height;
   private int activityLevel;
-  private int goalWeight;
+  private double weight;
+  private double goalWeight;
   private int numTimesMoodLogged;
   private int totalMood;
+  private int age;
 
-  public User(String username, String password, int height, boolean sex, int goalWeight, int activityLevel){
+  public User(String username, String password, double height, boolean sex, double goalWeight, double weight, int activityLevel, int age){
     this.username = username;
     this.password = password;
     this.height = height;
     this.sex = sex;
     this.goalWeight = goalWeight;
+    this.weight = weight;
     this.activityLevel = activityLevel;
+    this.age = age;
+
+    numTimesMoodLogged = 0;
   }
 
   public String getUsername(){
@@ -39,19 +45,27 @@ public class User
     this.password = password;
   }
 
+  public int getAge(){
+    return age;
+   }
+
+  public void setAge(int age){
+     this.age = age;
+   }
+
   public boolean getSex(){
     return sex;
   }
 
-  public void setSex(boolean sex){
+  public void setSex(boolean sex){ // true == female // false = male
     this.sex = sex;
   }
 
-  public int getHeight(){
+  public double getHeight(){
     return height;
   }
 
-  public void setHeight(int height){
+  public void setHeight(double height){
     this.height = height;
   }
 
@@ -63,13 +77,21 @@ public class User
     this.activityLevel = activityLevel;
   }
 
-  public int getGoalWeight(){
+  public double getGoalWeight(){
     return goalWeight;
   }
 
-  public void setGoalWeight(int goalWeight){
+  public void setGoalWeight(double goalWeight){
     this.goalWeight = goalWeight;
   }
+
+  public void setWeight(double weight){
+     this.weight = weight;
+   }
+
+  public double getWeight(){
+      return weight;
+   }
 
   public int getNumTimesMoodLogged(){
     return numTimesMoodLogged;
@@ -79,6 +101,10 @@ public class User
     this.numTimesMoodLogged = numTimesMoodLogged;
   }
 
+  public void incrementNumTimesMoodLogged(){
+     numTimesMoodLogged++;
+   }
+
   public int getTotalMood(){
     return totalMood;
   }
@@ -86,4 +112,8 @@ public class User
   public void setTotalMood(int totalMood){
     this.totalMood = totalMood;
   }
+
+  public void add(int t){
+     totalMood = totalMood + t;
+   }
 }	// END USER CLASS
