@@ -6,13 +6,13 @@ public class Output
   private double BMR;
   private int deltaToBMR;
   // ideal Macros
-  private int idealFat;
-  private int idealCarb;
-  private int idealProtein;
+  private double idealFat;
+  private double idealCarb;
+  private double idealProtein;
 
-  private int deltaCarb;
-  private int deltaFat;
-  private int idealProtein;
+  private double deltaCarb;
+  private double deltaFat;
+  private double idealProtein;
 
   private String derivedSessionMood;
   private String derivedAverageMood;
