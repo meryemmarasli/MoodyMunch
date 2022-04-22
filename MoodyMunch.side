@@ -1,0 +1,1293 @@
+{
+  "id": "f323a9d3-cbf6-4931-ad4b-cb9e2d4cdac5",
+  "version": "2.0",
+  "name": "MoodyMunch",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "c9bb88d6-7db5-4ec7-839e-614e91dcb865",
+    "name": "smoke_test",
+    "commands": [{
+      "id": "b9cc2ac1-52f0-4648-b34e-151c1e5b04cf",
+      "comment": "",
+      "command": "open",
+      "target": "/moodymunch/homepage.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "805d7483-fdba-468a-a445-132a3e68af70",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "175bf48e-ccf0-4ffe-953b-ba274a3fc010",
+      "comment": "",
+      "command": "click",
+      "target": "name=activity",
+      "targets": [
+        ["name=activity", "name"],
+        ["css=.form-select:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='activity']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6d04063-bcea-414c-b456-cb93e148eb77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calculate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bb9bc95-ece4-4616-ac45-a63062427120",
+      "comment": "",
+      "command": "click",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae324d8b-75bd-46cb-bb42-181efd2b8b69",
+      "comment": "",
+      "command": "type",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "5ce3284a-be24-4fe2-a2e0-4d24333ea208",
+      "comment": "",
+      "command": "click",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9092a14-4adb-4a5e-b0dc-2d39716a2176",
+      "comment": "",
+      "command": "type",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "204cd55b-7413-46ae-a79a-1be4dda2562d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@value='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf9bda89-4e26-4d12-b812-0c2d56b47593",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card-text:nth-child(2)",
+      "targets": [
+        ["css=.card-text:nth-child(2)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Your mood is: 2.5')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4bfb2d0f-d6b8-4d65-b040-4902df3c51ee",
+    "name": "test_all_elements_present",
+    "commands": [{
+      "id": "1fe50d70-17bc-4be5-84ae-8b0ea3138be7",
+      "comment": "",
+      "command": "open",
+      "target": "/moodymunch/homepage.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49bb92f4-f57e-4052-b2d8-c54f02c5a58b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03a60044-12ec-460a-96d6-22b201161e41",
+      "comment": "",
+      "command": "click",
+      "target": "name=age",
+      "targets": [
+        ["name=age", "name"],
+        ["css=.col-sm-4:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='age']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4de6170d-23a3-4ba9-943c-b050412ef551",
+      "comment": "",
+      "command": "type",
+      "target": "name=age",
+      "targets": [
+        ["name=age", "name"],
+        ["css=.col-sm-4:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='age']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "c53a3646-7620-4f10-b55f-9428b9e84567",
+      "comment": "",
+      "command": "click",
+      "target": "name=height",
+      "targets": [
+        ["name=height", "name"],
+        ["css=.col-sm-6:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='height']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4aef328-740b-48fc-9bed-5857093cecc9",
+      "comment": "",
+      "command": "type",
+      "target": "name=height",
+      "targets": [
+        ["name=height", "name"],
+        ["css=.col-sm-6:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='height']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "175"
+    }, {
+      "id": "bd0cf69c-300c-492b-b458-40d6d85bc4ae",
+      "comment": "",
+      "command": "click",
+      "target": "name=weight",
+      "targets": [
+        ["name=weight", "name"],
+        ["css=.col-sm-6:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='weight']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c29d3711-d187-4178-b8ad-0ce39dc57a0e",
+      "comment": "",
+      "command": "type",
+      "target": "name=weight",
+      "targets": [
+        ["name=weight", "name"],
+        ["css=.col-sm-6:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='weight']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "60"
+    }, {
+      "id": "0a71583c-07f7-4754-b3a3-bc5984d2fd19",
+      "comment": "",
+      "command": "click",
+      "target": "name=cal",
+      "targets": [
+        ["name=cal", "name"],
+        ["css=.col-sm-4:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='cal']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66c4b8c5-c1a2-480d-b3ab-7dbea83a3e69",
+      "comment": "",
+      "command": "type",
+      "target": "name=cal",
+      "targets": [
+        ["name=cal", "name"],
+        ["css=.col-sm-4:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='cal']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "2abd4639-75be-44d0-bf45-825d846ec789",
+      "comment": "",
+      "command": "click",
+      "target": "name=pro",
+      "targets": [
+        ["name=pro", "name"],
+        ["css=.col-sm-4:nth-child(5) .form-control", "css:finder"],
+        ["xpath=//input[@name='pro']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44234de1-4120-4f45-b407-e6982d404aaf",
+      "comment": "",
+      "command": "type",
+      "target": "name=pro",
+      "targets": [
+        ["name=pro", "name"],
+        ["css=.col-sm-4:nth-child(5) .form-control", "css:finder"],
+        ["xpath=//input[@name='pro']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "30"
+    }, {
+      "id": "4a4ba046-3b6b-4eb1-831f-492591f19350",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(6) > div",
+      "targets": [
+        ["css=.col-sm-4:nth-child(6) > div", "css:finder"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d2afa26-4f58-43b9-b6fb-bff416d7d581",
+      "comment": "",
+      "command": "type",
+      "target": "name=car",
+      "targets": [
+        ["name=car", "name"],
+        ["css=.col-sm-4:nth-child(6) .form-control", "css:finder"],
+        ["xpath=//input[@name='car']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "35"
+    }, {
+      "id": "a56ab98c-ce4e-43f0-8842-708219318c77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(7) > div",
+      "targets": [
+        ["css=.col-sm-4:nth-child(7) > div", "css:finder"],
+        ["xpath=//div[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2897b7fd-b8ad-4dd1-9215-dc6d58234a33",
+      "comment": "",
+      "command": "type",
+      "target": "name=fat",
+      "targets": [
+        ["name=fat", "name"],
+        ["css=.col-sm-4:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//input[@name='fat']", "xpath:attributes"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": "15"
+    }, {
+      "id": "9033ab77-a79c-46ce-9b09-4c2222572dc2",
+      "comment": "",
+      "command": "click",
+      "target": "name=activity",
+      "targets": [
+        ["name=activity", "name"],
+        ["css=.form-select:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='activity']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9513555-1d94-4c63-af58-f4604ed02939",
+      "comment": "",
+      "command": "select",
+      "target": "name=activity",
+      "targets": [],
+      "value": "label=Moderate: exercise 4-5 times/week"
+    }, {
+      "id": "e5606cd3-be46-435d-aab0-c17d4c5a5dca",
+      "comment": "",
+      "command": "click",
+      "target": "name=sex",
+      "targets": [
+        ["name=sex", "name"],
+        ["css=.form-select:nth-child(10)", "css:finder"],
+        ["xpath=//select[@name='sex']", "xpath:attributes"],
+        ["xpath=//form/div/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "270eb8f5-d53c-4a8f-aa65-74650e1bde1a",
+      "comment": "",
+      "command": "select",
+      "target": "name=sex",
+      "targets": [],
+      "value": "label=Female"
+    }, {
+      "id": "f13e43d5-d15d-4323-9d0e-c1ed37e2f215",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calculate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0eb9daed-b766-45c5-8eea-e6bc52c30250",
+      "comment": "",
+      "command": "click",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbe5c990-8792-4bab-a616-0fe16964c57a",
+      "comment": "",
+      "command": "type",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "df591461-95c3-41ed-97f5-3b78d39badc0",
+      "comment": "",
+      "command": "click",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffae4dc8-cb4d-49a5-a3b0-1ec0e9ee5e0f",
+      "comment": "",
+      "command": "type",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "72c0b56d-97d6-4afb-bc96-88b03001d602",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@value='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8394b17-c047-434e-93db-275efe51b645",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card-text:nth-child(2)",
+      "targets": [
+        ["css=.card-text:nth-child(2)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Your mood is: 2.5')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72b963da-1228-4350-a1ae-81538b82ea50",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.bg-success .card-text",
+      "targets": [
+        ["css=.bg-success .card-text", "css:finder"],
+        ["xpath=//div[5]/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'You are 2078.97875 Calories below ideal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfadd61f-932e-467e-b71d-184fc130bd90",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.bg-info .card-text",
+      "targets": [
+        ["css=.bg-info .card-text", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'You are 0.0 grams below ideal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d20cabb3-fd0c-440b-8b7d-5dc191bba5f6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.bg-warning .card-text",
+      "targets": [
+        ["css=.bg-warning .card-text", "css:finder"],
+        ["xpath=//div[2]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'You are 115.0 grams above ideal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39c05f97-5e32-4f8d-ab67-cbb1bf2b9eec",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.bg-dark .card-text",
+      "targets": [
+        ["css=.bg-dark .card-text", "css:finder"],
+        ["xpath=//div[3]/div[2]/p", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ff94874e-ce2a-40f0-9822-f78815dc80ae",
+    "name": "test_mood",
+    "commands": [{
+      "id": "3fc7fdc2-418d-4c90-9752-af9f3e764b16",
+      "comment": "",
+      "command": "open",
+      "target": "/moodymunch/homepage.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef3a5f1d-207b-4e9a-8783-5a9a368d6888",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b72eb4b0-a4ea-42fb-ad1c-344907769a51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calculate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48e07aea-6559-4d51-87d5-9e4f18a0a7b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b273efa3-9513-41db-ad43-bdf6010dd099",
+      "comment": "",
+      "command": "type",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "25efbe04-739a-4ca7-86a4-d3e11f8f71f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42f5868e-d6bc-450d-afad-d1b99f8c35fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "5690ae1a-9eaf-4ae8-b3c9-67b276d4f2b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@value='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "487d1830-2ce6-47d1-a209-e9bdacb46e09",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=body > div:nth-child(5) > div > div.card-body > p",
+      "targets": [],
+      "value": "Your mood is: 2.5"
+    }]
+  }, {
+    "id": "201ccb53-af3e-447e-91ea-0523c901f3b9",
+    "name": "test_calories",
+    "commands": [{
+      "id": "c330a24a-b151-4db3-9182-61f6c625a774",
+      "comment": "",
+      "command": "open",
+      "target": "/moodymunch/homepage.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47a1ac38-fbb0-4c6b-99ed-11578726a2c9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7acd64b5-8e6f-4ecc-8a31-bcc53fc18bce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calculate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f9c7fd0-965a-4193-ab55-4894bf51fd8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f1e806c-e837-4297-a6e0-abb148dbc335",
+      "comment": "",
+      "command": "type",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "19213733-3006-4e05-afbc-14a8b3ac098e",
+      "comment": "",
+      "command": "click",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "def06bff-511e-4ce1-a131-7fc81d92a11e",
+      "comment": "",
+      "command": "type",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "53290c51-aa28-4c9b-acfb-f207a6c8a8f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@value='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c70ed1c0-d62e-4579-abbd-0a97ccc92156",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=body > div:nth-child(6) > div.card.text-white.bg-success.mb-3 > div.card-body > p",
+      "targets": [],
+      "value": "You are 1961.0 Calories below ideal"
+    }]
+  }, {
+    "id": "43b80732-8c07-4ef5-a9d0-39389da0f291",
+    "name": "test_fat",
+    "commands": [{
+      "id": "eeab86ab-efe2-46a2-8fd5-343d0a5e44b7",
+      "comment": "",
+      "command": "open",
+      "target": "/moodymunch/homepage.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbeb0935-5b19-4448-9717-4ab9330c4a4b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a103844-01f4-4690-a10c-4f4ca574c958",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(7) > div",
+      "targets": [
+        ["css=.col-sm-4:nth-child(7) > div", "css:finder"],
+        ["xpath=//div[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71e09e29-b51d-4328-b9e8-0e248f6eb64b",
+      "comment": "",
+      "command": "type",
+      "target": "name=fat",
+      "targets": [
+        ["name=fat", "name"],
+        ["css=.col-sm-4:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//input[@name='fat']", "xpath:attributes"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": "35"
+    }, {
+      "id": "70683691-30e0-45e9-8e2b-7ba0d829b694",
+      "comment": "",
+      "command": "click",
+      "target": "name=activity",
+      "targets": [
+        ["name=activity", "name"],
+        ["css=.form-select:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='activity']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f5e9462-9af5-4afb-9406-c924866a0fa0",
+      "comment": "",
+      "command": "select",
+      "target": "name=activity",
+      "targets": [],
+      "value": "label=Extra Active: very intense exercise daily, or physical job"
+    }, {
+      "id": "5a559ddf-be25-498e-b117-5ad6f459cccb",
+      "comment": "",
+      "command": "click",
+      "target": "name=sex",
+      "targets": [
+        ["name=sex", "name"],
+        ["css=.form-select:nth-child(10)", "css:finder"],
+        ["xpath=//select[@name='sex']", "xpath:attributes"],
+        ["xpath=//form/div/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bce4320-3955-4a7c-92ea-c70d5554ac4d",
+      "comment": "",
+      "command": "select",
+      "target": "name=sex",
+      "targets": [],
+      "value": "label=Female"
+    }, {
+      "id": "a7c891a4-abe6-4865-94ce-8f93274fd356",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calculate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a900385a-e694-437c-a1ee-959b8e7acd49",
+      "comment": "",
+      "command": "click",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec90b5a0-31f9-428b-b0a6-b748b7feb1bf",
+      "comment": "",
+      "command": "type",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "12fc2c82-26ed-4ceb-8791-adbefc78a2b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f1b8d7e-2505-4ee7-a012-d2bdaa69b4af",
+      "comment": "",
+      "command": "type",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "c4e09aab-a034-40b2-b983-4d29a6ca8c33",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@value='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c12e3311-aefd-4cb3-9aec-75d47d17649e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=body > div:nth-child(6) > div.card-group > div.card.text-white.bg-info.mb-3 > div.card-body > p",
+      "targets": [],
+      "value": "You are 18.75 grams below ideal"
+    }]
+  }, {
+    "id": "299958a8-1aa7-4724-9168-f7dd91de55b1",
+    "name": "test_carb",
+    "commands": [{
+      "id": "898c7297-ac5c-4458-96bf-3a5b6b13e1ec",
+      "comment": "",
+      "command": "open",
+      "target": "/moodymunch/homepage.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9200648b-40dc-458c-9e97-4a5772ac670f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23d96bbc-3922-4845-897a-c7e93e838620",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(6) > div",
+      "targets": [
+        ["css=.col-sm-4:nth-child(6) > div", "css:finder"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8188508a-97dd-43e3-9bb8-4d3a12716e0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(6) > div",
+      "targets": [
+        ["css=.col-sm-4:nth-child(6) > div", "css:finder"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38ea8f9a-34d6-484f-839f-3c68e4f2e3ff",
+      "comment": "",
+      "command": "type",
+      "target": "name=car",
+      "targets": [
+        ["name=car", "name"],
+        ["css=.col-sm-4:nth-child(6) .form-control", "css:finder"],
+        ["xpath=//input[@name='car']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "50"
+    }, {
+      "id": "1a10c2a0-5eaa-4d18-9e39-d7fb0135ac11",
+      "comment": "",
+      "command": "click",
+      "target": "name=activity",
+      "targets": [
+        ["name=activity", "name"],
+        ["css=.form-select:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='activity']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c7595d9-7caa-49f6-a66c-2e166a2c8439",
+      "comment": "",
+      "command": "select",
+      "target": "name=activity",
+      "targets": [],
+      "value": "label=Active: daily exercise or intense exercise 3-4 times/week"
+    }, {
+      "id": "7a6da4e9-d750-4f86-ab06-4dda01b78c5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calculate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60f612bb-1609-4d3c-9e48-b42bd1cdae1b",
+      "comment": "",
+      "command": "click",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a72cdaaf-5b0c-4847-820d-9d95c05cd170",
+      "comment": "",
+      "command": "type",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "1985a074-1d78-42a5-a533-6ccad49af8ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9614f22-d630-4354-8095-9ed2de920083",
+      "comment": "",
+      "command": "type",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "9118fd2e-eecf-44b7-9f60-de3f298267d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@value='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cc7be8f-bcbc-4f93-a33d-c24fb73cfdf6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=body > div:nth-child(6) > div.card-group > div.card.text-white.bg-warning.mb-3 > div.card-body",
+      "targets": [],
+      "value": "You are 112.5 grams above ideal"
+    }]
+  }, {
+    "id": "7e59452a-2e55-4ef8-837e-6d612da35b3e",
+    "name": "test_protein_bug",
+    "commands": [{
+      "id": "c8840be2-30fa-4b80-9645-b99b77407513",
+      "comment": "",
+      "command": "open",
+      "target": "/moodymunch/homepage.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f4413a9-d566-4c93-90a5-a542201c4440",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89502801-7272-4c9c-b0a8-582164860ba8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(5) > div",
+      "targets": [
+        ["css=.col-sm-4:nth-child(5) > div", "css:finder"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d41ab68-c5ea-439c-bf98-c524d87585bc",
+      "comment": "",
+      "command": "type",
+      "target": "name=pro",
+      "targets": [
+        ["name=pro", "name"],
+        ["css=.col-sm-4:nth-child(5) .form-control", "css:finder"],
+        ["xpath=//input[@name='pro']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "15"
+    }, {
+      "id": "70175804-4acf-4328-9ca3-1b12a4a3b57b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calculate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcfc31ef-9c87-4776-a969-e6ebfa50d74e",
+      "comment": "",
+      "command": "type",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "45c7ec15-8940-4e8e-9e88-5b00e87fdc51",
+      "comment": "",
+      "command": "click",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0342b5d3-9904-48af-81c7-f28d5ec1bafb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form",
+      "targets": [
+        ["css=.form", "css:finder"],
+        ["xpath=//form[@action='/moodymunch/survey']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e9d256b-419b-47fc-bea9-ebf72e9280fd",
+      "comment": "",
+      "command": "type",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "79a11cd9-e40b-4a1f-948d-32cb11cc54f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3f367d2-5072-4aec-8192-4826a6b93a55",
+      "comment": "",
+      "command": "type",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "da391a6e-9457-402b-9aad-fe094715ac94",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@value='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "131f04ab-3098-4926-9071-a234cda92bfa",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=body > div:nth-child(6) > div.card-group > div.card.text-white.bg-dark.mb-3 > div.card-body > p",
+      "targets": [],
+      "value": "You are 0.0 grams below ideal"
+    }]
+  }, {
+    "id": "dc91971b-2f94-4902-922c-f6aadbe7a9e2",
+    "name": "test_protein",
+    "commands": [{
+      "id": "836a6725-884a-46b5-8cda-a337a51a641f",
+      "comment": "",
+      "command": "open",
+      "target": "/moodymunch/homepage.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5edf8cce-6f45-4f47-ad6c-008e45e9af97",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4545373f-5fe3-41e3-b010-2f6cdec6523f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(5) > div",
+      "targets": [
+        ["css=.col-sm-4:nth-child(5) > div", "css:finder"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40f5a987-d769-42ff-a7b4-075ffa591a95",
+      "comment": "",
+      "command": "type",
+      "target": "name=pro",
+      "targets": [
+        ["name=pro", "name"],
+        ["css=.col-sm-4:nth-child(5) .form-control", "css:finder"],
+        ["xpath=//input[@name='pro']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "15"
+    }, {
+      "id": "631ac047-6599-4d12-8fc8-42ee7cb49b84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calculate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "484212dd-42f0-4837-b245-c189724cbb63",
+      "comment": "",
+      "command": "type",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "1ec806e3-34dd-44cd-8336-1cd9241f1765",
+      "comment": "",
+      "command": "click",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "049decd9-d625-48fe-9d69-025ac85a4916",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form",
+      "targets": [
+        ["css=.form", "css:finder"],
+        ["xpath=//form[@action='/moodymunch/survey']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b662f30d-9ac0-459b-81d4-fec7153c27a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=mental",
+      "targets": [
+        ["id=mental", "id"],
+        ["name=mental", "name"],
+        ["css=#mental", "css:finder"],
+        ["xpath=//input[@id='mental']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "49aef726-734a-42d6-b97b-398740902bee",
+      "comment": "",
+      "command": "click",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbc0fb86-21f6-44a4-842c-f53cfea39182",
+      "comment": "",
+      "command": "type",
+      "target": "id=physical",
+      "targets": [
+        ["id=physical", "id"],
+        ["name=physical", "name"],
+        ["css=#physical", "css:finder"],
+        ["xpath=//input[@id='physical']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "23431883-0f1a-4cf1-9226-7bcdda98f6a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@value='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bd99dec-f619-4c6a-8806-be63f9c22761",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=body > div:nth-child(6) > div.card-group > div.card.text-white.bg-dark.mb-3 > div.card-body > p",
+      "targets": [],
+      "value": "You are 0.0 grams below ideal"
+    }]
+  }],
+  "suites": [{
+    "id": "b4305b6a-b8b0-49a2-98e0-dd0b60f32d5f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c9bb88d6-7db5-4ec7-839e-614e91dcb865"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
