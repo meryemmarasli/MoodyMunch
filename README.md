@@ -1,8 +1,8 @@
-##MoodyMunch
+# MoodyMunch
 
 A BMR calculator and diet tracker which compares your daily eating habits to your goals and tracks your mood.
 
-##Deployment
+## Deployment
 
 Requires a jetty server to run https://www.eclipse.org/jetty/download.php
 
